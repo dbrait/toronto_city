@@ -1,0 +1,46 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+##The Most Dangerous Intersections in Toronto
+
+There has been a lot written recently, in Toronto focused publications, about cyclist and pedestrian safety.  It seemed abnormal, so I decided to dig up the Serious Injuries dataset that the Toronto Police make open to the public and see if the fall was a particulary bad time for pedestrians.
+
+While it is tough to gage the true numbers of incidents, as many small brushes go unreported, the serious injuries index seems like a good proxy for how dangerous it is for pedestrians and cyclists in the city.
+
+#Worst Time of Year
+
+From the data it is pretty clear that the fall is consistently the worst time of the year, which major incidents topping 200 in October, November and December.
+
+What is out there is data on the major accidents that have involved a pedestrian or a clyclist over the last 11 years.  These are accidents that resulted in a critical injury or death.
+
+#Trends through the Years
+
+##Worst Time of the Day
+Graphs to go with this.
+
+Both pedestrian and cyclist accidents peak in the evening rush hour.  
+
+##Most Dangerous Neighborhoods
+
+ped_by_neighborhood %>% kable("html") %>% kable_styling()
+
+The most dangerous neighborhoods for pedestrians are ____, ____, ____.  
+
+The most dangerous for cyclists are ___, ___, ___.  Some of these are expected with the obvious influx these places have during congested times.
+
+cyl_by_neighborhood %>% kable("html") %>% kable_styling()
+
+##Worse Stretches of Road in the City
+Certain areas are much more dangerous for pedestrians.  
+
+There are certain pieces of road that have a much higher proportion of cyclist accidents.
+
+##Worst Intersections in the City
+There are certain intersections that consistenly cause problems for pedestrians.
+
+https://beta.theglobeandmail.com/opinion/toronto-has-a-deadly-traffic-problem-and-its-time-to-change/article36678283/?ref=http://www.theglobeandmail.com&
+
